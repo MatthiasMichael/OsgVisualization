@@ -16,6 +16,7 @@ class OsgVisualizationConan(ConanFile):
 
     def package(self):
         self.copy("*.h", dst="include", src="include")
+        self.copy("ui_*.h", dst="include", keep_path=False)
         self.copy("*.lib", dst="lib", keep_path=False)
 
     def package_info(self):
