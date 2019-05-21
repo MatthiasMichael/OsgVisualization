@@ -2,9 +2,6 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 PROJECT( OsgCommonObjects_Test_DisplayDescriptor )
 
-INCLUDE(${CMAKE_CURRENT_BINARY_DIR}/conanbuildinfo.cmake)
-CONAN_BASIC_SETUP()
-
 message("AAA: ${UI_INCLUDE_DIR}")
 
 FIND_PACKAGE( Qt5Core )
@@ -30,6 +27,9 @@ TARGET_LINK_LIBRARIES( ${PROJECT_NAME}
 	Glu32
 	Opengl32
 	OsgVisualization
+	CONAN_PKG::Parametrizable
+	CONAN_PKG::Roi3DF
+	CONAN_PKG::openscenegraph
 )
 
 CONAN_TARGET_LINK_LIBRARIES(${PROJECT_NAME})

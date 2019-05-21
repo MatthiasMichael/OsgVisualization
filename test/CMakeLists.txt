@@ -15,5 +15,5 @@ IF( BUILD_EXAMPLE_DISPLAYABLE )
 ENDIF( )
 
 IF( BUILD_EXAMPLE_DISPLAY_DESCRIPTOR )
-	ADD_SUBDIRECTORY( test_displayDescriptor/cmake ${CMAKE_CURRENT_BINARY_DIR}/test_displayDescriptor)
+	ADD_SUBDIRECTORY( test_displayDescriptor/cmake ${CMAKE_CURRENT_BINARY_DIR}/test_display_descriptor)
 ENDIF( )
