@@ -2,9 +2,6 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 
 PROJECT( OsgVisualization_Tests )
 
-SET( BUILD_EXAMPLE_DISPLAYABLE OFF CACHE BOOL "Generate tests using OsgDisplayable and OsgGeometryManager" )
-SET( BUILD_EXAMPLE_DISPLAY_DESCRIPTOR OFF CACHE BOOL "Generate tests using OsgDisplayDescriptor and OsgGenericVisualization" )
-
 ADD_CUSTOM_TARGET( OsgVisualization_Test_Common SOURCES
 	common/osgCommonObjects_test.h
 )
