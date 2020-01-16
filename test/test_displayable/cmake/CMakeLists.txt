@@ -2,10 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 PROJECT( OsgCommonObjects_Test_Displayable )
 
-FIND_PACKAGE( Qt5Core )
-FIND_PACKAGE( Qt5Widgets )
-FIND_PACKAGE( Qt5Gui )
-FIND_PACKAGE( Qt5OpenGL )
+FIND_PACKAGE( Qt5 COMPONENTS Core Widgets Gui OpenGL Svg )
 
 INCLUDE_DIRECTORIES(
 	../../../include
@@ -22,6 +19,7 @@ TARGET_LINK_LIBRARIES( ${PROJECT_NAME}
 	Qt5::Gui
 	Qt5::OpenGL
 	Qt5::Widgets
+	Qt5::Svg
 	Glu32
 	Opengl32
 	OsgVisualization
